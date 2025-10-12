@@ -1,8 +1,9 @@
+import Container from "@/components/Container";
 import { Button } from "@/components/ui/button";
 import React from "react";
 const Home = () => {
   return (
-    <div className="p-10 bg-shop_light_pink">
+    <Container className=" bg-shop_light_pink">
       <h2 className="text-xl font-semibold">Home</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
@@ -13,7 +14,7 @@ const Home = () => {
         atque? Consectetur possimus porro laborum?
       </p>
       <Button size="lg">Check Out</Button>
-    </div>
+    </Container>
   );
 };
 export default Home;
