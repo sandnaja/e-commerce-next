@@ -3,13 +3,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import {
-  ClerkProvider,
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from '@clerk/nextjs'
+  ClerkProvider
+} from "@clerk/nextjs";
 
 export const metadata: Metadata = {
   title: {
@@ -27,13 +22,15 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
-      <body className="font-poppins antialiased">
-        <Header />
-        {children}
-        <Footer/>
-      </body>
-    </html>
+      <html lang="en" className="font-poppins antialiased">
+        <body className="font-poppins antialiased">
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </div>
+        </body>
+      </html>
     </ClerkProvider>
   );
 }
