@@ -1,10 +1,10 @@
 export const headerData = [
-    { title: "Home", href: "/" },
-    { title: "Shop", href: "/shop" },
-    { title: "Blog", href: "/blog" },
-    { title: "Hot Deal", href: "/deal" },
-    // { title: "Contact", href: "/contact" },
-]
+  { title: "Home", href: "/" },
+  { title: "Shop", href: "/shop" },
+  { title: "Blog", href: "/blog" },
+  { title: "Hot Deal", href: "/deal" },
+  // { title: "Contact", href: "/contact" },
+];
 
 export const quickLinksData = [
   { title: "About us", href: "/about" },
@@ -22,4 +22,11 @@ export const categoriesData = [
   { title: "Washing Machine", href: "washing-machine" },
   { title: "Kitchen Appliances", href: "kitchen-appliances" },
   { title: "gadget accessories", href: "gadget-accessories" },
+];
+
+export const productType = [
+  { title: "Gadget", value: "gadget" },
+  { title: "Appliances", value: "appliances" },
+  { title: "Refrigerators", value: "refrigerators" },
+  { title: "Others", value: "others" },
 ];
