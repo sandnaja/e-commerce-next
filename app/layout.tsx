@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import {
-  ClerkProvider
-} from "@clerk/nextjs";
+import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
   title: {
@@ -26,7 +24,7 @@ export default function RootLayout({
         <body className="font-poppins antialiased">
           <div className="flex flex-col min-h-screen">
             <Header />
-            <main>{children}</main>
+            <main className="flex-1 mb-20">{children}</main>
             <Footer />
           </div>
         </body>
