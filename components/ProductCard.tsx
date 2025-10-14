@@ -23,7 +23,7 @@ const ProductCard = ({ product }: { product: Product }) => {
             className={`w-full h-64 object-contain overflow-hidden transition-transform bg-shop_ligth_bg hoverEffect ${product?.stock !== 0 ? "group-hover:scale-105" : "opacity-50"}`}
           />
         )}
-        <AddToWishlistButton product={product} />
+        {/* <AddToWishlistButton product={product} /> */}
         {product?.status === "sale" && (
           <p className="absolute top-2 left-2 z-10 text-xs border border-darkColor/50 px-2 rounded-full group-hover:border-shop_light_green group-hover:text-shop_light_green hoverEffect">
             Sale!

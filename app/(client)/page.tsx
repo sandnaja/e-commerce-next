@@ -1,14 +1,17 @@
 import Container from "@/components/Container";
 import HomeBanner from "@/components/HomeBanner";
+import HomeCategorise from "@/components/HomeCategorise";
 import ProductGrid from "@/components/ProductGrid";
+import { getCategories } from "@/sanity/queries";
 import React from "react";
-const Home = () => {
+const Home = async () => {
+  const categories = await getCategories(6);
+  console.log(categories)
   return (
     <Container>
       <HomeBanner />
-      <div>
         <ProductGrid />
-      </div>
+        <HomeCategorise categories={categories}/>
     </Container>
   );
 };
