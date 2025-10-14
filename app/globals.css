@@ -10,11 +10,15 @@
   --color-shop_btn_dark_green:#063D29;
   --color-shop_ligth_bg:#F6F6F6;
   --color-shop_light_green:#3B9C3C;
+  --color-shop_lighter_green:#93D991;
   --color-shop_orange:#FB6C08;
   --color-darkColor:#151515;
   --color-lightColor:#52525B;
   --color-lightOrange:#FCA99B;
-  --color-dark_blue:#6C7FD8
+  --color-dark_blue:#6C7FD8;
+  --color-shop_lighter_bg:#F1F3F8;
+  --color-shop_light_text:#686E7D;
+  --color-shop_lighter_text:#ABABAB;
 }
 
 :root {
