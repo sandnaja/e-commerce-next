@@ -5,7 +5,7 @@ import { ShoppingBag } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface Props {
-  product: Product;
+  product: Product | null | undefined;
   className?: string;
 }
 
@@ -15,7 +15,7 @@ const AddToCartButton = ({ product, className }: Props) => {
     window.alert("Added to cart");
   }
   return (
-    <div>
+    <div  className="w-full h-12 flex items-center">
       <Button
         onClick={handleAddToCart}
         disabled={isOutofStock}
